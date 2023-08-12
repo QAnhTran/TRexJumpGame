@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+#game {
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+#trex {
+    width: 25px;
+    height: 50px;
+    position:relative;
+    top: 250px;
+    background-color: grey;
+    
+}
+
+.jumpClass {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+    0%{top: 250px;}
+    30%{top: 200px;}
+    70%{top: 200px;}
+    100%{top: 250px;}
+}
+
+#blocks {
+    width: 20px;
+    height: 30px;
+    background-color: lightblue;
+    position: relative;
+    top: 220px;
+    left: 480px;
+    animation: block 1s infinite linear;
+}
+
+@keyframes block {
+    0%{left:480px;}
+    100%{left: -40px;}
+}
